@@ -2,7 +2,7 @@ Fase 1 do Tech Challenge
 
 # API de Dados Vitivinícolas da Embrapa
 
-Aplicação em Python com API REST e autenticação para consulta dos dados públicos de vitivinicultura da Embrapa.
+Aplicação em Python com API REST para consulta dos dados públicos de vitivinicultura da Embrapa.
 
 # Como Executar
 
@@ -25,7 +25,6 @@ uvicorn app.main:app --reload
 
 Acesse a documentação:  
 🔹 [http://localhost:8000/docs](http://localhost:8000/docs)  
-🔹 [http://localhost:8000/redoc](http://localhost:8000/redoc)
 
 
 ## Tecnologias Utilizadas
