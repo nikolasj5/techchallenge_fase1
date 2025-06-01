@@ -24,7 +24,7 @@ class EmbrapaScraper:
     def get_data(self, tipo: str):
         try:
             response = requests.get(self.CSV_URLS[tipo], timeout=10)
-            response.encoding = 'utf-8'
+            #response.encoding = 'utf-8'
             #self.save_to_file(tipo, response.text)  # Salva o arquivo localmente
             df = pd.read_csv(StringIO(response.text), sep=';', skipfooter=2, engine='python')
             return df.dropna().to_dict(orient='records')
